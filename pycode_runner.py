@@ -4,6 +4,12 @@ import io
 import sys
 import google.generativeai as genai
 import ast
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+gemini_api_key = os.getenv("API_KEY")
+
 
 # Title of the Streamlit App
 st.title("Python Code Runner")
@@ -17,7 +23,7 @@ code = st_ace(
         auto_update=False  # Disable automatic updates
     )
 
-genai.configure(api_key="AIzaSyAWnBq6Be-fPY-xguFxmNNXkTp5gKPh8Aw")
+genai.configure(api_key=gemini_api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def is_python_code(code1):
