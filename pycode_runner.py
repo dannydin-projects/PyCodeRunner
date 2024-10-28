@@ -38,7 +38,7 @@ def is_python_code(code1):
         print(f"Unexpected error: {e}")
         return False
     
-py_check = is_python_code(code)     
+py_check = is_python_code(code) and code     
 
 if st.button("Run Code"):
     if code:  # Check if there's code to run
