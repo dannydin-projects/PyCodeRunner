@@ -84,7 +84,7 @@ if st.button("AI Explaination"):
         response = model.generate_content(prompt)
         st.write(response.text)
     else:    
-        st.write("Please Check Your Code")
+        st.warning("Please Check Your Code")
 
 #Button for Optimization    
 if st.button('Optimize Code'):
@@ -93,7 +93,7 @@ if st.button('Optimize Code'):
         response = model.generate_content(prompt)
         st.write(response.text)
     else:    
-        st.write("Please Check Your Code")    
+        st.warning("Please Check Your Code")    
 
 
 
