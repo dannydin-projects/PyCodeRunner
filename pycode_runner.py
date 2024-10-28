@@ -20,7 +20,7 @@ code = st_ace(
         font_size=14,
         show_gutter=True,
         key="ace-editor",
-        height=400,  # Adjust height as needed  
+        height=550,  # Adjust height as needed  
         auto_update=False  # Disable automatic updates
     )
 
